@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "bypass-client",
+  "version": "${version}",
+  "name": "Bypass Client",
+  "description": "Bypass modulu",
+  "authors": ["olivia"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.olivia.client.BypassClient"]
+  },
+  "mixins": [
+    "bypass-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*"
+  }
+}
